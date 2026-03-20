@@ -3,12 +3,10 @@ body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
 
-  /* FULLSCREEN BACKGROUND IMAGE */
   background:
-    linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
     url('assets/wooded_web.png') center center / cover no-repeat;
 
-  background-color: #000;
   color: #e5e5e5;
 }
 
