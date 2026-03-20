@@ -9,6 +9,25 @@ body {
   color: #e5e5e5;
 }
 
+/* BACKGROUND ENERGY */
+@keyframes backgroundShift {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(0,255,136,0.08), transparent);
+  top: -10%;
+  left: -10%;
+  z-index: -1;
+  animation: backgroundShift 10s infinite;
+}
+
 /* HEADER */
 header {
   background: linear-gradient(to bottom, #000, #020402);
