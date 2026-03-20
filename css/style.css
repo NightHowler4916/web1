@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #05080d;
+  background: radial-gradient(circle at top, #06120c, #000);
   color: #e5e5e5;
 }
 
 /* HEADER */
 header {
-  background: #000;
+  background: linear-gradient(to bottom, #000, #020402);
   padding: 15px;
   text-align: center;
   border-bottom: 2px solid #00ff88;
@@ -70,19 +70,20 @@ h2 {
 
 /* HERO */
 .hero {
-  height: 500px;
+  height: 520px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
   background: radial-gradient(circle at center, #003322, #000);
   text-align: center;
 }
 
-/* LOGO (BIGGER + CLEANER) */
+/* LOGO */
 .hero img {
   width: 260px;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   filter: drop-shadow(0 0 20px #00ff88);
   transition: 0.3s;
 }
@@ -94,7 +95,8 @@ h2 {
 
 /* HERO TEXT */
 .hero h2 {
-  font-size: 52px;
+  font-size: 56px;
+  letter-spacing: 2px;
   color: #00ff88;
   text-shadow: 0 0 30px #00ff88;
   margin-bottom: 10px;
