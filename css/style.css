@@ -115,3 +115,13 @@ body::after {
 section {
   border-bottom: 1px solid rgba(0,255,136,0.1);
 }
+
+.hero img {
+  filter: drop-shadow(0 0 10px #00ff88);
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  filter: drop-shadow(0 0 25px #00ff88);
+  transform: scale(1.05);
+}
