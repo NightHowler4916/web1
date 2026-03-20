@@ -1,3 +1,4 @@
+/* BASE */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -5,6 +6,7 @@ body {
   color: #e5e5e5;
 }
 
+/* HEADER */
 header {
   background: #000;
   padding: 15px;
@@ -18,6 +20,13 @@ header h1 {
   letter-spacing: 2px;
 }
 
+header p {
+  color: #00ff88;
+  font-size: 12px;
+  margin: 5px 0 0 0;
+}
+
+/* NAV */
 nav a {
   margin: 0 15px;
   color: #aaa;
@@ -28,15 +37,20 @@ nav a:hover {
   color: #00ff88;
 }
 
+/* SECTIONS */
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
   text-align: center;
+  border-bottom: 1px solid rgba(0,255,136,0.1);
 }
 
 h2 {
   color: #00ff88;
 }
 
+/* BUTTONS */
 .btn {
   background: #00ff88;
   color: black;
@@ -54,9 +68,9 @@ h2 {
   box-shadow: 0 0 25px #00ff88;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
-  height: 450px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,8 +79,22 @@ h2 {
   text-align: center;
 }
 
+/* LOGO (BIGGER + CLEANER) */
+.hero img {
+  width: 260px;
+  margin-bottom: 30px;
+  filter: drop-shadow(0 0 20px #00ff88);
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  filter: drop-shadow(0 0 40px #00ff88);
+  transform: scale(1.05);
+}
+
+/* HERO TEXT */
 .hero h2 {
-  font-size: 50px;
+  font-size: 52px;
   color: #00ff88;
   text-shadow: 0 0 30px #00ff88;
   margin-bottom: 10px;
@@ -88,13 +116,7 @@ h2 {
   animation: glowPulse 2.5s infinite;
 }
 
-section {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* LIGHTNING FLASH */
+/* LIGHTNING EFFECT */
 @keyframes lightningFlash {
   0% { opacity: 0; }
   5% { opacity: 0.15; }
@@ -110,20 +132,4 @@ body::after {
   background: radial-gradient(circle at top, rgba(0,255,136,0.15), transparent);
   pointer-events: none;
   animation: lightningFlash 6s infinite;
-}
-
-section {
-  border-bottom: 1px solid rgba(0,255,136,0.1);
-}
-
-.hero img {
-  width: 300px;
-  margin-bottom: 35px;
-  filter: drop-shadow(0 0 20px #00ff88);
-  transition: 0.3s;
-}
-
-.hero img:hover {
-  filter: drop-shadow(0 0 25px #00ff88);
-  transform: scale(1.05);
 }
