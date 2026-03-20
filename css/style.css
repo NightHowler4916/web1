@@ -47,3 +47,26 @@ h2 {
   border-radius: 6px;
   box-shadow: 0 0 10px #00ff88;
 }
+
+/* HERO SECTION */
+.hero {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #003322, #000);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  color: #00ff88;
+  text-shadow: 0 0 30px #00ff88;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #bbb;
+}
